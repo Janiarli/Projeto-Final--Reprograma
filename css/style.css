@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css?family=Chewy");
+/*ESTILOS PADROES*/
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 40px;
+}
+#navegacaoPrimaria{
+	width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navegacaoPrimaria ul{
+	width: 80%;
+    display: flex;
+    align-items: center;
+}
+#navegacaoPrimaria ul li{
+	color: #ffffff;
+	font-weight: bold;
+}
+#porque,
+#comoAjudar,
+#equipe{
+	margin-top: 30px;
+}
+#nossaCausa p,
+#comoAjudar p{
+	margin: 0;
+}
+#nossaCausa{
+	background: rgba(212, 186, 228, 0.44);
+}
+#parceiros{
+	margin-bottom: 30px;
+}
+#logo{
+	width: 400px;
+	height:300px;
+	left: 40%;
+	display: inline-block;
+}
+.container {
+	width: 1140px;
+	margin: auto;
+}
+.container.centralizador{
+	padding: 60px;
+}
+.linha {
+	display: flex;
+}
+	.linha.espacoEntre {
+		justify-content: space-between;
+	}
+	.linha.alinharVertical{
+		align-items: center;
+		height: 100%;
+	}
+	.linha.espacoEntre li{
+		padding: 10px;
+	}
+h1:first-child {
+	margin-top: 0;
+}
+a:hover{
+	text-decoration: none;
+	color: #711ca6;
+}
+ul {
+	list-style-type: none;
+}
+* { 
+	color: #292929;
+	box-sizing: border-box;
+}
+.equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.equipeImg{
+	height: 100px;
+	border-radius: 50px;
+	margin: 0 30px;
+}
+.equipeNome{
+	padding-top: 10px;
+}
+
+.equipeNome p{
+	color: #292929;
+	font-size: 16px;
+}
+.integrantes{
+	display: flex;
+	justify-content: center;
+}
+.centralizador{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.textoCentralizado{
+	text-align:center;
+	padding: 10px;
+	margin: 16px;
+}
+.menor{
+	width: 60%;
+}
+.botao{
+	font-size: 15px;
+	font-weight: bold;
+	background: #711ca6;
+	border: solid 2px #fff;
+	border-radius: 16px;
+	margin: 10px;
+	cursor: pointer;
+	padding: 11px;
+}
+
+body section,
+body #porque {
+	padding: 20px 0px;
+}
+/*FIM ESTILOS PADROES*/
+
+/*CABEÇALHO*/
+#cabecalho {
+	width: 100%;
+	background-color: #7cc16e;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+
+#cabecalho .fa {
+	color: #ffffff;
+}
+#cabecalho .container {
+	height: 60px;
+}
+#cabecalho img{
+	width: 97px;
+}
+.menuHorizontal ul {
+	margin: 0;
+	padding: 0;
+}
+.botao.voluntario{
+	padding: 11px;
+}
+.botao.voluntario.verde{
+	display: inline;
+	padding: 12px;
+	background-color: #7cc16e;
+	color: #ffffff;
+	margin: 30px;
+}
+.botoesVerde{
+	padding: 36px;
+}
+.botao.menuHamburguer{
+	background: none;
+	display: none;
+}
+/*FIM CABEÇALHO
+
+/*SLIDER*/
+#slider{
+	height: calc(100vh - 40px);
+	width: 100%;
+	padding-top: 0px;
+	position: relative;
+}
+#slider .seta{
+	color: #7cc16e;
+	font-size: 44px;
+	position: absolute;
+	top: 250px;
+	background: none;
+	border: none;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+}
+#slider .seta.esquerda{
+	left: 0px;
+}
+#slider .seta.direita{
+	right: 0px;
+}
+#slider .bullets{
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.bullet{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: none;
+	background: #7cc16e;
+	margin: 0 10px;
+}
+.slideBox{
+	height: 100%;
+}
+.slide{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 1s ease;
+	opacity: 0;
+}
+.slide.ativo{
+	opacity: 1;
+	display: flex;
+	z-index: 1;
+}
+.slide img{
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#slider *{
+	color: #ffffff;
+	text-align: center;
+}
+
+#slogan *{
+	color: #7cc16e;
+}
+#slogan h1 img{
+	width: 50px;
+}
+#slogan h3{
+	text-align: center;
+	color: #7cc16e;
+}
+.slideBox h1{
+	text-indent: -9999999px;
+}
+/*FIM SLIDER*/
+
+/*CONTEUDO PORQUE*/
+.card{
+	padding: 20px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 33%;
+}
+.card img{
+	height: 100px;
+}
+/*FIM CONTEUDO PORQUE*/
+
+/*FORULARIO*/
+h2{
+	color: #711ca6;
+	font-family: 'Baloo', cursive;
+}
+.checkbox{
+	margin: 50px 0 15px 0;
+}
+.fundo{
+	background: url(../imgs/brinquedos.jpg) no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+/*FIM FORULARIO*/
+
+/*FOOTER*/
+footer {
+	width: 100%;
+}
+#rodape { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 1%;
+	background-color: #7cc16e;
+}
+#rodape .fa{
+	color: #195b17;
+}
+#rodape p,
+a{
+	color: #ffffff;
+}
+/*FIM FOOTER*/
+
+/*DESKTOP*/
+@media (min-width: 1140px){
+	#logo{
+	left: 35%;
+	}
+	#navegacaoPrimaria ul{
+	margin-left: 23%;
+	align-items: baseline;
+	}
+	.slideBox h1{
+	font-size: 90px;
+	margin: 20px 0;
+	}
+	.slideBox h3{
+	font-size: 60px;
+	margin: 20px 0;
+	}
+}
+/*FIM DESKTOP*/
+
+/*TABLET*/
+@media (max-width: 1140px){
+	#logo{
+	width: 360px;
+	height: 220px;
+	top: 10%;
+	left: 30%;
+	}
+	.botao.voluntario.branco{
+		display: none;
+	}
+	.slideBox h1{
+	font-size: 60px;
+	margin: 20px 0;
+	}
+	.slideBox h3{
+	font-size: 30px;
+	margin: 20px 0;
+	}
+	.container{
+		width: 700px;
+	}
+	#navegacaoPrimaria{
+		display: none;
+	}
+	.botao.menuHamburguer{
+		display: block;
+	}
+	#cabecalho .container{
+		position: relative;
+	}
+
+	#navegacaoPrimaria {
+		display: block;
+		position: absolute;
+		top: 60px;
+		left: 0px;
+		width: 100%;
+	}
+	#navegacaoPrimaria ul{
+		flex-direction: column;
+		margin-left: 23%;
+		align-items: baseline;
+	}
+	#navegacaoPrimaria a {
+		display: block;
+		padding: 20px 0px;
+		padding-left: 20px;
+		color: #ffffff;
+	}
+	#navegacaoPrimaria a:hover{
+	text-decoration: none;
+	color: #711ca6;
+	}
+	#navegacaoPrimaria{
+		display: none;
+	}
+	#navegacaoPrimaria.visivel{
+		display: block;
+		background-color: #7cc16e;
+	}
+	.card{
+		width: 50%;		
+	}
+	.cardContainer{
+		flex-wrap: wrap;
+		align-content: center;
+    	justify-content: center;
+	}
+
+/*FIM TABLET*/
+
+/*SMARTPHONE*/
+@media (max-width: 700px){
+	#logo{
+		left: 16%;
+	}
+	.container{
+		width: 100%;
+	}
+	.botao.voluntario.branco{
+		display: none;
+	}
+	.botao.voluntario.verde{
+	background-color: #7cc16e;
+	color: #ffffff;
+	margin: 30px;
+	display: flex;
+    flex-direction: column;
+	}
+	.botoesVerde{
+		padding: 0;
+	}
+	.slideBox h1{
+	font-size: 30px;
+	margin: 20px 0;
+	}
+	.slideBox h3{
+	font-size: 15px;
+	margin: 20px 0;
+	}
+	.card{
+		width:100%;		
+	}
+
+}
+@media (max-width: 480px){
+	#logo {
+    width: 150px;
+    height: 100px;
+    top: 30%;
+    left: 27%;
+	}
+	#navegacaoPrimaria ul{
+	margin-left: 23%;
+	}
+	.container.centralizador {
+    padding: 0px;
+	}
+}
+@media (max-width: 320px){
+	#navegacaoPrimaria ul{
+	margin-left: 12%;
+	}
+	.container.centralizador {
+    padding: 0px;
+	}
+}
+/*FIM SMARTHONE*/
